@@ -9,7 +9,7 @@ var input = document.getElementById('input'), // input/output button
 
 // adding click handlers to number buttons
 for (var i = 0; i < number.length; i++) {
-  number[i].addEventListener("click", function(e) {
+  number[i].addEventListener("click", function (e) {
 
     // storing current input string and its last character in variables - used later
     var currentString = input.innerHTML;
@@ -36,7 +36,7 @@ for (var i = 0; i < number.length; i++) {
 
 // adding click handlers to number buttons
 for (var i = 0; i < operator.length; i++) {
-  operator[i].addEventListener("click", function(e) {
+  operator[i].addEventListener("click", function (e) {
 
     // storing current input string and its last character in variables - used later
     var currentString = input.innerHTML;
@@ -58,7 +58,7 @@ for (var i = 0; i < operator.length; i++) {
 }
 
 // on click of 'equal' button
-result.addEventListener("click", function() {
+result.addEventListener("click", function () {
 
   // this is the string that we will be processing eg. -10+26+33-56*34/23
   var inputString = input.innerHTML;
@@ -115,6 +115,6 @@ result.addEventListener("click", function() {
 });
 
 // clearing the input on press of clear
-clear.addEventListener("click", function() {
+clear.addEventListener("click", function () {
   input.innerHTML = "";
 })
